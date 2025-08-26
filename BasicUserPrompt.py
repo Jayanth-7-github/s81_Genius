@@ -2,7 +2,6 @@ import os
 import requests
 from dotenv import load_dotenv
 
-
 # Load environment variables from .env file
 def load_api_config():
     load_dotenv()
@@ -19,7 +18,6 @@ system_instructions = [
     "You are a helpful assistant that responds in a friendly and concise style.",
     "If the user asks for code, provide well-formatted Python snippets."
 ]
-
 
 def chat():
     api_url, api_key = load_api_config()
@@ -57,6 +55,10 @@ def chat():
         except Exception as e:
             print("Error communicating with Gemini:", e)
 
-
 if __name__ == "__main__":
     chat()
+
+
+                                        
+                                        
+                                        
